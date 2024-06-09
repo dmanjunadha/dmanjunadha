@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <header class="header">
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <img src="user-avatar.png" alt="User Avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Watch Anywhere. Cancel Anytime.</h1>
+                <button class="btn-primary">Watch Now</button>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <h2>Popular on Netflix</h2>
+            <div class="movie-container">
+                <div class="movie-item">
+                    <img src="movie1.jpg" alt="Movie 1">
+                </div>
+                <div class="movie-item">
+                    <img src="movie2.jpg" alt="Movie 2">
+                </div>
+                <div class="movie-item">
+                    <img src="movie3.jpg" alt="Movie 3">
+                </div>
+                <div class="movie-item">
+                    <img src="movie4.jpg" alt="Movie 4">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS-
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.movie-section {
+  padding: 20px;
+}
+
+.movie-section h2 {
+  margin-bottom: 20px;
+}
+
+.movie-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.movie-item {
+  min-width: 200px;
+}
+
+.movie-item img {
+  width: 100%;
+  border-radius: 5px;
+}
